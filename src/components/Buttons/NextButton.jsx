@@ -34,6 +34,15 @@ export default function NextButton(props) {
     );
   }
 
+  if (props.error) {
+    return (
+      <Link to="/" className="Button btn-next" onClick={Animate}>
+        <p>MAIN PAGE</p>
+        <ArrowCircleRight className="icon" />
+      </Link>
+    );
+  }
+
   return (
     <Link
       to={`/survey/${props.nextPage}`}
