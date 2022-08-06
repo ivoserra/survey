@@ -11,7 +11,7 @@ import { UserContext } from "../../Context/UserContext";
 export default function Question() {
   const { api }=useContext(UserContext)
   const { questionPath } = useParams();
-  console.log(questionPath);
+
 
   const data = api.question.find((item) => item.path === questionPath);
 
