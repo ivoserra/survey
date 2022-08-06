@@ -3,7 +3,7 @@ import { ArrowCircleRight } from "phosphor-react";
 import { useContext } from "react";
 import { UserContext } from "../../Context/UserContext";
 
-import "./nextButton.scss";
+import "./NextButton.scss";
 
 export default function NextButton(props) {
   const { setAnimation } = useContext(UserContext);

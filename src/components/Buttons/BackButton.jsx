@@ -3,7 +3,7 @@ import { ArrowLeft } from "phosphor-react";
 import { useContext } from "react";
 import { UserContext } from "../../Context/UserContext";
 
-import "./backButton.scss";
+import "./BackButton.scss";
 
 export default function BackButton(props) {
   const { setAnimation } = useContext(UserContext);

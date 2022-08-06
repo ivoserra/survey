@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "./pageProgressBar.scss";
+import "./PageProgressBar.scss";
 
 const Container = styled.div`
   height: 15px;
