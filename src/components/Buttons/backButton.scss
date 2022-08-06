@@ -1,0 +1,34 @@
+.btn-back {
+    //width:12.8vw;
+    width: 245px;
+    text-decoration: none;
+    background: var(--black1) 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    p {
+        font: normal normal bold 0.78vw/3.6vh Inter;
+        // font: normal normal bold 15px/30px Inter;
+        letter-spacing: 0.3px;
+        color: var(--white);
+        opacity: 1;
+        margin: 0;
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 12px/30px Inter;
+        }
+    }
+
+    .icon {
+        opacity: 1;
+        font-size: 14px;
+        color: var(--white);
+        margin: 0.2rem;
+
+
+    }
+
+}

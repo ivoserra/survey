@@ -1,0 +1,61 @@
+.Result-user {
+    margin-top: 1rem;
+    text-align: center;
+
+
+    h2 {
+        text-align: center;
+        font: normal normal bold 2.5vw/4.44vh Inter;
+        // font: normal normal bold 48px/39px Inter;
+        color: var(--white);
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 28px/13px Inter;
+
+        }
+
+    }
+
+    h4 {
+        margin: 0;
+        font: normal normal bold 1.7vw/4.8vh Inter;
+        // font: normal normal bold 32px/39px Inter;
+        color: var(--white);
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 23px/13px Inter;
+
+        }
+    }
+}
+
+.Result-score {
+    text-align: center;
+    margin-top: 3rem;
+
+    .result {
+        font: normal normal bold 3.1vw/2.45vh Inter;
+        // font: normal normal bold 60px/20px Inter;
+        letter-spacing: 0px;
+        color: var(--white);
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 30px/10px Inter;
+
+        }
+
+    }
+
+    .points {
+        font: normal normal bold 0.8vw/2.45vh Inter;
+        //font: normal normal bold 17px/20px Inter;
+        letter-spacing: 0px;
+        color: var(--white);
+        margin-top: 1.5rem;
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 17px/20px Inter;
+
+        }
+    }
+}

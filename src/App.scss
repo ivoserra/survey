@@ -1,0 +1,107 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --white: #FFFFFF;
+    --black1: #0D0D0D;
+    --black2: #121212;
+    --black3: #000000;
+    --black4: #080808;
+    --gray1: #6A6A6A;
+    --gray2: #707070;
+    --gray3: #767676;
+    --gray4: #808080;
+
+}
+
+body {
+    background: var(--black1) 0% 0% no-repeat padding-box;
+    color: var(--white);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+
+.Page {
+    margin: 2rem;
+    height: 90vh;
+
+    .page-inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid var(--gray1);
+        border-radius: 10px;
+        height: 92vh;
+        text-align: center;
+
+        .lorem {
+            width: 60vw;
+            color: var(--white);
+            text-align: center;
+            //font: normal normal normal 20px/32px Inter;
+            font: normal normal normal 1vw/3.7vh Inter;
+            opacity: 1;
+            margin-bottom: 2rem;
+
+            @media screen and (min-width:320px) {
+                font: normal normal normal 10px/25px Inter;
+
+            }
+
+
+        }
+
+        h1 {
+            text-align: center;
+            //font: normal normal bold 80px/97px Inter;
+            font: normal normal bold 4vw/11.30vh Inter;
+            color: var(--white);
+            margin: 1rem;
+
+            @media screen and (min-width:320px) and (max-width:1024px) {
+                font: normal normal bold 6vw/11.30vh Inter;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            // font: normal normal bold 48px/59px Inter;
+            font: normal normal bold 2.4vw/6.8vh Inter;
+            color: var(--white);
+            letter-spacing: 0px;
+            margin: 1rem 0;
+
+            @media screen and (min-width:320px) and (max-width:1024px) {
+                font: normal normal bold 4vw/5.30vh Inter;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            margin: 0;
+            // font: normal normal bold 20px/24px Inter;
+            font: normal normal bold 1vw/2.7vh Inter;
+            letter-spacing: 0px;
+            color: var(--white);
+            text-transform: uppercase;
+            opacity: 1;
+
+            @media screen and (min-width:320px) and (max-width:1024px) {
+                font: normal normal bold 2vw/2.30vh Inter;
+            }
+        }
+
+
+
+
+    }
+}

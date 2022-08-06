@@ -1,0 +1,59 @@
+.Button {
+    margin: 2rem 0;
+    border: 1px solid var(--gray2);
+    text-decoration: none;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    p {
+        //font: normal normal bold 20px/32px Inter;
+        font: normal normal bold 1vw/3.7vh Inter;
+        letter-spacing: 0.1px;
+        color: var(--black3);
+        opacity: 1;
+        margin-left: 15px;
+        letter-spacing: 0.4px;
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font: normal normal bold 12px/23px Inter;
+
+        }
+    }
+
+    .icon {
+        font-size: 20px;
+        color: var(--black4);
+        margin-left: 1rem;
+
+        @media screen and (min-width:320px) and (max-width:1024px) {
+            font-size: 15px;
+            margin-left: 0.5rem;
+
+        }
+    }
+
+}
+
+.btn-start {
+    width: 19.2vw;
+    height: 7.5vh;
+
+    @media screen and (min-width:320px) and (max-width:1024px) {
+        width: 200px;
+        height: 62px;
+    }
+}
+
+.btn-next {
+    width: 12.8vw;
+    height: 8.8vh;
+    margin-top: 2rem;
+
+    @media screen and (min-width:320px) and (max-width:1440px) {
+        width: 150px;
+        height: 42px;
+    }
+}
