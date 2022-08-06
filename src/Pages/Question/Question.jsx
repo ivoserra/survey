@@ -1,12 +1,15 @@
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import AnimatePage from "../../components/Animation/GlobalAnimation";
 
 import Header from "../../components/Header/Header";
 import PageProgressBar from "../../components/PageProgressBar/PageProgressBar.jsx";
 import Select from "../../components/Select/Select.jsx";
-import api from "../../Lib/lib.js";
+import { UserContext } from "../../Context/UserContext";
+
 
 export default function Question() {
+  const { api }=useContext(UserContext)
   const { questionPath } = useParams();
   console.log(questionPath);
 
