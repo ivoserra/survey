@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import AnimatePage from "../../components/Animation/GlobalAnimation";
 import ScoreBar from "../../components/ScoreBar/ScoreBar";
 import { UserContext } from "../../Context/UserContext";
-import "./result.scss";
+
 
 export default function Result() {
   const { user, score, setScore } = useContext(UserContext);
