@@ -22,6 +22,6 @@ after cloning
 - sass: ^1.54.1
 - styled-components: ^5.3.5
 
-### Ivo serra
+### August 2022. Frontend assignment. Survey project. Ivo serra
 
 
