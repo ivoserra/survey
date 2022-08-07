@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
 import AnimatePage from "../../components/Animation/GlobalAnimation";
+import NextButton from "../../components/Buttons/NextButton";
 import ScoreBar from "../../components/ScoreBar/ScoreBar";
 import { UserContext } from "../../Context/UserContext";
 
-
 export default function Result() {
-  const { user, score, setScore } = useContext(UserContext);
+  const { user, score } = useContext(UserContext);
 
   function FinalScore(score) {
     const obj = score;
@@ -38,13 +37,7 @@ export default function Result() {
           <ScoreBar percent={FinalScore(score)} />
 
           <section>
-            <Link
-              to="/"
-              onClick={(e) => setScore({})}
-              className="Button btn-next"
-            >
-              <p>START NEW</p>
-            </Link>
+            <NextButton welcome="welcome" />
           </section>
         </section>
       </section>
