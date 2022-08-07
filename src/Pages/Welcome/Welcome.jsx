@@ -14,7 +14,7 @@ export default function Welcome() {
         <section className="page-inner">
           <h1>{data.title}</h1>
           <p className="lorem">{data.text}</p>
-          <NextButton survey="survey" />
+          <NextButton nextPage="question0" />
         </section>
       </section>
     </AnimatePage>

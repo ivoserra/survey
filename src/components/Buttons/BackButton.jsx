@@ -25,14 +25,6 @@ export default function BackButton(props) {
     );
   }
 
-  if (props.survey) {
-    return (
-      <Link to="/survey" className="btn-back" onClick={Animation}>
-        <ArrowLeft className="icon" />
-        <p>BACK</p>
-      </Link>
-    );
-  }
 
   return (
     <Link

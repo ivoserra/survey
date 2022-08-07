@@ -9,7 +9,7 @@ import "./Select.scss";
 
 export default function Select(props) {
   const { options, path } = props;
-  const { score, setScore } = useContext(UserContext);
+  const { score, setScore , setUser} = useContext(UserContext);
 
   const [isOften, setIsOften] = useState(false);
   const [isRarely, setIsRarely] = useState(false);
@@ -18,6 +18,22 @@ export default function Select(props) {
   const [isOptionOne, setIsOptionOne] = useState(false);
   const [isOptionTwo, setIsOptionTwo] = useState(false);
   const [isOptionThree, setIsOptionThree] = useState(false);
+
+  if (path === "question0") {
+    return (
+      <>
+        <section className="Select-section">
+          <input
+            onChange={(e) => setUser(e.target.value)}
+            placeholder="John Doe"
+          ></input>
+        </section>
+
+        <NextButton nextPage="question1" />
+        <BackButton welcome="welcome" />
+      </>
+    );
+  }
 
   if (path === "question1") {
     function selectCircle(option) {
@@ -91,7 +107,7 @@ export default function Select(props) {
         </section>
 
         <NextButton nextPage="question2" />
-        <BackButton survey="survey" />
+        <BackButton backPage="question0" />
       </>
     );
   }

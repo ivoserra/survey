@@ -5,13 +5,14 @@ const api = {
     title: "Welcome to our Survey.",
     text: "Lorem ipsum odor amet, consectetuer adipiscing elit. Lobortis phasellus congue mollis convallis; maximus curae magna proin aliquet. Cubilia vestibulum sed himenaeos arcu sollicitudin libero tempor nostra malesuada. Ante vivamus suspendisse turpis hac taciti taciti lacinia auctor. Maximus aenean montes habitasse, nostra potenti quisque aenean etiam. Nascetur mus convallis nibh euismod vivamus laoreet. Sapien arcu elit condimentum purus nascetur quis varius aliquet elementum. Condimentum ut euismod tempus vehicula amet praesent phasellus cras sociosqu.",
   },
-  survey: {
-    id: "01",
-    path: "survey",
-    name: "WHO ARE YOU?",
-    title: "Please enter your name.",
-  },
   question: [
+    {
+      id: "00",
+      path: "question0",
+      name: "WHO ARE YOU?",
+      title: "Please enter your name.",
+      options: ["username"],
+    },
     {
       id: "01",
       path: "question1",

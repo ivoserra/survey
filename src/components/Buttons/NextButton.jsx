@@ -16,14 +16,6 @@ export default function NextButton(props) {
     });
   }
 
-  if (props.survey) {
-    return (
-      <Link to="/survey" className="Button btn-start" onClick={Animate}>
-        <p>START THE SURVEY</p>
-        <ArrowCircleRight className="icon" />
-      </Link>
-    );
-  }
 
   if (props.finish) {
     return (
